@@ -9,3 +9,5 @@ Rails.application.routes.draw do
   # redirect to the path tasks in the method
   delete "tasks/:id", to: "tasks#destroy"
 end
+
+# rails s - in terminal to open on local host 3000
