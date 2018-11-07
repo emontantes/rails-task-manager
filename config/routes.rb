@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get "tasks/:id", to: "tasks#show", as: "task"
   get "tasks/:id/edit", to: "tasks#edit", as: "edit"
   patch "tasks/:id", to: "tasks#update", as: "update"
-  # get "tasks/:id", to: "tasks#destroy"
+  # redirect to the path tasks in the method
+  delete "tasks/:id", to: "tasks#destroy"
 end
